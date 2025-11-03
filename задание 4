@@ -1,0 +1,2 @@
+@ECHO OFF
+FOR %%i IN (%1\*.*) do (if exist %2\%%~Ni ECHO %%~NXi)

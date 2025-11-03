@@ -1,0 +1,4 @@
+@ECHO OFF
+SET /A k = 0
+For /R %1C:\Windows %%f IN (.) DO SET /A k = k+1
+ECHO kol-vo subdir: %k%

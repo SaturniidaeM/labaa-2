@@ -1,0 +1,12 @@
+@Echo OFF
+:Begloop
+SET /P Nomer=enter number
+If %number% ==- goto ExitLoop
+IF NOT DEFINED MIN SET MIN=%number%
+IF NOT DEFINED MAX SET MAX=%number%
+IF %number% LEQ %MIN% SET MIN=%number%
+IF %number% LEQ %MAX% SET MAX=%number%
+GOTO Begloop
+:ExitLoop
+Echo MIN = %MIN%
+Echo MAX = %MAX%
